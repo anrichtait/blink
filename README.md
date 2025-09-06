@@ -59,18 +59,6 @@ project_markers = [".git","Cargo.toml","package.json"]
 max_depth = 0
 max_preview_size = 5    #in mb
 ```
-
-Keep config focused: start\_dirs, exclude, editor, media\_player, document\_viewer, preview\_cmds, project\_markers.
-
----
-
-## Integration rules
-
-* If `$NVIM_LISTEN_ADDRESS` + `nvr` present → `nvr --remote-tab-silent <file>`.
-* Else → spawn `nvim <file>`.
-* If `emacsclient` daemon available → `emacsclient -n`.
-* Multi-select passes all paths to configured app (e.g., `mpv file1 file2`).
-
 ---
 
 ## Performance rules
@@ -84,10 +72,8 @@ Keep config focused: start\_dirs, exclude, editor, media\_player, document\_view
 
 ## Roadmap (concise)
 
-1. Docs & config (this README).
-2. Glue script: `fd` → `fzf`/`sk` → opener (shell or tiny Rust with pico-args).
-3. UX polish: preview mapping, multi-select rules, robust project detection.
-4. Optional: single-binary rewrite (embed picker) and package for AUR.
+1. Framing and foundations
+2. `gf` command
 
 ---
 
