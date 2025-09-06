@@ -5,9 +5,6 @@ Search filenames, content, projects, media and documents.
 
 Built as an answer to all the sub-par tmux and bash scripts flying around. Also a hobby project.
 
-
----
-
 ## Why blink
 
 * Instant file discovery and string search
@@ -15,7 +12,6 @@ Built as an answer to all the sub-par tmux and bash scripts flying around. Also 
 * Focused UX for everyday work.
 * Sensible defaults
 
----
 
 ## Dependencies
 **AUR Packages:**
@@ -28,7 +24,6 @@ Built as an answer to all the sub-par tmux and bash scripts flying around. Also 
 * clap
 * 
 
----
 
 ## Commands (one-line behaviors)
 
@@ -45,7 +40,6 @@ A tool like this should focus on being as frictionless as possible. Flags are a 
 to quickly change program defaults but add extra usage overhead for users. For that reason all
 tool configuration is done in the source or in the blink.toml config file.
 
----
 
 ## Config (example)
 
@@ -59,7 +53,6 @@ project_markers = [".git","Cargo.toml","package.json"]
 max_depth = 0
 max_preview_size = 5    #in mb
 ```
----
 
 ## Performance rules
 
@@ -68,12 +61,10 @@ max_preview_size = 5    #in mb
 * Default: limit system-wide depth. Use `ps` for deep project search.
 * Don’t preview files larger than `size_preview_limit_mb`.
 
----
 
 ## Roadmap (concise)
 
 1. Framing and foundations
 2. `gf` command
 
----
 
