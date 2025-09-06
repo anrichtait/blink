@@ -1,0 +1,22 @@
+# Test configuration for blink
+# Uses current directory and simple exclusions
+
+# Search in current directory only
+fav_dirs = ["."]
+
+# Basic exclusions
+exclude = [
+    "target",
+    ".git",
+    "*.tmp"
+]
+
+# Use echo as editor for testing
+editor = "echo"
+
+# Simple project markers
+project_markers = [".git", "Cargo.toml"]
+
+# Reasonable limits
+max_depth = 5
+preview_max_size = 1024

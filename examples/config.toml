@@ -1,0 +1,42 @@
+# Example configuration file for blink
+# Place this file at ~/.config/blink/config.toml
+
+# Favorite directories for quick navigation
+fav_dirs = [
+    "~/Projects",
+    "~/Documents",
+    "~/Downloads",
+    "/etc",
+    "/var/log"
+]
+
+# Patterns to exclude from search results
+exclude = [
+    "*.git*",
+    "node_modules",
+    "target",
+    "build",
+    "dist",
+    "*.tmp",
+    "*.log",
+    "*.cache"
+]
+
+# Default editor (if not set, uses $EDITOR environment variable)
+editor = "nvim"
+
+# File patterns that indicate project root directories
+project_markers = [
+    ".git",
+    "Cargo.toml",
+    "package.json",
+    "pyproject.toml",
+    "Makefile",
+    "CMakeLists.txt"
+]
+
+# Maximum search depth (default: unlimited)
+max_depth = 10
+
+# Maximum file size for previews in bytes (default: 1MB)
+preview_max_size = 1048576
