@@ -53,19 +53,12 @@ blink gf --help
 
 ## Configuration
 
-Create `~/.config/blink/config.toml`:
-
-```toml
-fav_dirs = ["~/Projects", "~/.config"]
-exclude = ["*.git*", "node_modules"]
-editor = "nvim"
-max_depth = 10
-```
+See the example config for options: `cp examples/config.toml ~/.config/blink/config.toml`:
 
 ## Commands
 
 - `gf` - Global file search (implemented)
-- 'gp' - Global project search (planned)
+- `gp` - Global project search (planned)
 - `gs` - Global string search (planned)
 - `pf` - Project file search (planned)
 - `ps` - Project string search (planned)
